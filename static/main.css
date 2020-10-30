@@ -1,33 +1,121 @@
 /* Feel free to modify anything in this file.*/
 html body {
 	background-color: #ecedd5;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
-header {
-	padding-left: 40px;
-	padding-top: 20px;
+#header {
+	display: flex;
+    padding: 5rem;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #365940;
+    color: white;
+}
+
+.price {
+    background-color: yellow;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.cart-icon {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 5rem;
+    padding-right: 0;
+}
+
+.cart-icon-b {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 5rem;
+    padding-right: 5.5rem;
+}
+
+#cart-symbol:hover {
+    cursor: pointer;
+}
+
+.pic-and-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 30rem;
+}
+
+.pic-and-desc-b { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 30rem;
+
+}
+
+.cart-counter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .vendor-wrapper {
-	justify-content: left;
-	padding-left: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+	justify-content: space-between;
 	padding-top: 20px;
 	padding-bottom: 20px;
+    border: 0;
+}
+
+.vendor-wrapper-b {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	justify-content: baseline;
+	padding: 2rem;
+    margin: 0;
+    width: max-content;
+    height: 35rem;
 }
 
 .vendor-photo {
-	max-width: 200px;
+    background-color: #365940;
+	max-width: 300px;
 	max-height: 150px;
-	padding-right: 20px;
+	padding: 1rem;
 }
 
 .vendor-book-button {
+    height: 3.5rem;
 	font-size: 2em;
 }
 
 .content-pane {
-  padding: 40px;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin: 0;
 }
+
+.content-pane-b {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 
 .fa-stack[data-count]:after{
   position: absolute;
